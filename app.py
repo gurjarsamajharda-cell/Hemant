@@ -11,13 +11,13 @@ st.markdown("---")
 
 @st.cache_data
 def load_budget():
-    return pd.read_csv("RBO Budget final in crores .xlsx - Sheet1.csv")
+    return pd.read_csv("RBO Budget final in crores .xlsx")
 
 try:
     budget_df = load_budget()
     budget_loaded = True
 except FileNotFoundError:
-    st.error("⚠️ Please ensure 'RBO Budget final in crores .xlsx - Sheet1.csv' is uploaded to GitHub.")
+    st.error("⚠️ Please ensure '' is uploaded to GitHub.")
     budget_loaded = False
 
 st.subheader("1. Upload Today's RM Daily Business Report")
