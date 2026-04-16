@@ -11,7 +11,7 @@ st.markdown("---")
 
 @st.cache_data
 def load_budget():
-    return pd.read_csv("RBO Budget final in crores .xlsx")
+    return pd.read_excel("RBO Budget final in crores .xlsx")
 
 try:
     budget_df = load_budget()
